@@ -1,0 +1,420 @@
+/* ===========================
+   SERVICES PAGE CSS
+=========================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:
+        linear-gradient(135deg, rgba(2, 6, 23, 0.8), rgba(15, 23, 42, 0.75)),
+        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color:white;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0F172A;
+    z-index:1000;
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+
+}
+
+
+.logo{
+
+    color:#FACC15;
+    font-size:26px;
+    font-weight:700;
+
+}
+
+
+.logo i{
+
+    margin-right:10px;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:white;
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#FACC15;
+
+}
+
+
+.btn-nav{
+
+    background:#FACC15;
+    color:#111;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+
+.menu-btn{
+
+    display:none;
+    font-size:25px;
+
+}
+
+
+
+/* ===========================
+   SERVICES HERO
+=========================== */
+
+
+.services-hero{
+
+    padding:150px 8% 80px;
+    text-align:center;
+
+}
+
+
+.services-hero h1{
+
+    font-size:50px;
+    color:#FACC15;
+    margin-bottom:20px;
+
+}
+
+
+.services-hero p{
+
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:18px;
+
+}
+
+
+
+/* ===========================
+   SERVICE CARDS
+=========================== */
+
+
+.services{
+
+    padding:50px 8% 80px;
+
+}
+
+
+.service-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+
+
+.service-card{
+
+    background:#1E293B;
+    padding:40px 30px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+    border:1px solid transparent;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+    border-color:#FACC15;
+    box-shadow:0 20px 35px rgba(0,0,0,.4);
+
+}
+
+
+
+.service-card i{
+
+    font-size:50px;
+    color:#FACC15;
+    margin-bottom:25px;
+
+}
+
+
+
+.service-card h2{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-card p{
+
+    color:#cbd5e1;
+    margin-bottom:25px;
+
+}
+
+
+
+.service-card a{
+
+    display:inline-block;
+    background:#FACC15;
+    color:#111;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+
+
+.service-card a:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+
+.why-us{
+
+    background:#111827;
+    text-align:center;
+    padding:80px 8%;
+
+}
+
+
+
+.why-us h2{
+
+    font-size:38px;
+    margin-bottom:50px;
+    color:#FACC15;
+
+}
+
+
+
+.why-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+
+
+.why-container div{
+
+    background:#1E293B;
+    padding:35px;
+    border-radius:20px;
+
+}
+
+
+
+.why-container i{
+
+    font-size:45px;
+    color:#FACC15;
+    margin-bottom:20px;
+
+}
+
+
+
+.why-container p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+
+footer{
+
+    background:#020617;
+    text-align:center;
+    padding:40px;
+
+}
+
+
+
+footer h3{
+
+    color:#FACC15;
+    font-size:25px;
+
+}
+
+
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+.copyright{
+
+    margin-top:20px;
+
+}
+
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+.menu-btn{
+
+    display:block;
+    color:white;
+
+}
+
+
+.btn-nav{
+
+    display:none;
+
+}
+
+
+.services-hero h1{
+
+    font-size:38px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.services-hero{
+
+    padding:120px 5% 60px;
+
+}
+
+
+.services-hero h1{
+
+    font-size:32px;
+
+}
+
+
+.service-card{
+
+    padding:30px 20px;
+
+}
+
+
+.why-us h2{
+
+    font-size:30px;
+
+}
+
+
+}

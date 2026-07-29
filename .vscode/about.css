@@ -1,0 +1,520 @@
+/* ===========================
+   ABOUT PAGE CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:
+        linear-gradient(135deg, rgba(2, 6, 23, 0.8), rgba(15, 23, 42, 0.75)),
+        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color:white;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0F172A;
+    z-index:1000;
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+
+}
+
+
+.logo{
+
+    color:#FACC15;
+    font-size:26px;
+    font-weight:700;
+
+}
+
+
+.logo i{
+
+    margin-right:10px;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:white;
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#FACC15;
+
+}
+
+
+.btn-nav{
+
+    background:#FACC15;
+    color:#111;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+
+.menu-btn{
+
+    display:none;
+    color:white;
+    font-size:25px;
+
+}
+
+
+/* ===========================
+   ABOUT HERO
+=========================== */
+
+
+.about-hero{
+
+    padding:150px 8% 80px;
+    text-align:center;
+
+}
+
+
+.about-hero h1{
+
+    font-size:50px;
+    color:#FACC15;
+    margin-bottom:20px;
+
+}
+
+
+.about-hero p{
+
+    color:#cbd5e1;
+    font-size:18px;
+
+}
+
+
+
+/* ===========================
+   STORY SECTION
+=========================== */
+
+
+.story{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    padding:70px 8%;
+
+}
+
+
+.story-image img{
+
+    width:100%;
+    border-radius:20px;
+
+}
+
+
+
+.story-text h2{
+
+    color:#FACC15;
+    font-size:38px;
+    margin-bottom:20px;
+
+}
+
+
+
+.story-text p{
+
+    color:#cbd5e1;
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===========================
+   MISSION VISION
+=========================== */
+
+
+.mission{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    padding:60px 8%;
+
+}
+
+
+
+.mission-card{
+
+    background:#1E293B;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    transition:.3s;
+
+}
+
+
+
+.mission-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.mission-card i{
+
+    font-size:50px;
+    color:#FACC15;
+    margin-bottom:20px;
+
+}
+
+
+
+.mission-card h2{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.mission-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* ===========================
+   VALUES
+=========================== */
+
+
+.values{
+
+    background:#111827;
+    text-align:center;
+    padding:80px 8%;
+
+}
+
+
+
+.values h2{
+
+    font-size:38px;
+    color:#FACC15;
+    margin-bottom:50px;
+
+}
+
+
+
+.value-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+
+
+.value-card{
+
+    background:#1E293B;
+    padding:35px;
+    border-radius:20px;
+
+}
+
+
+
+.value-card i{
+
+    font-size:45px;
+    color:#FACC15;
+    margin-bottom:20px;
+
+}
+
+
+
+.value-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* ===========================
+   DRIVERS
+=========================== */
+
+
+.drivers{
+
+    padding:80px 8%;
+    text-align:center;
+
+}
+
+
+
+.drivers h2{
+
+    font-size:38px;
+    color:#FACC15;
+    margin-bottom:50px;
+
+}
+
+
+
+.driver-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+
+
+.driver-card{
+
+    background:#1E293B;
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+
+}
+
+
+
+.driver-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.driver-card img{
+
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:20px;
+
+}
+
+
+
+.driver-card h3{
+
+    color:#FACC15;
+
+}
+
+
+
+.driver-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+
+footer{
+
+    background:#020617;
+    text-align:center;
+    padding:40px;
+
+}
+
+
+
+footer h3{
+
+    color:#FACC15;
+    font-size:25px;
+
+}
+
+
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+.copyright{
+
+    margin-top:20px;
+
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+.menu-btn{
+
+    display:block;
+
+}
+
+
+.btn-nav{
+
+    display:none;
+
+}
+
+
+
+.story{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.mission{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.about-hero h1{
+
+    font-size:38px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.about-hero{
+
+    padding:120px 5% 60px;
+
+}
+
+
+
+.about-hero h1{
+
+    font-size:32px;
+
+}
+
+
+
+.story,
+.mission,
+.values,
+.drivers{
+
+    padding-left:5%;
+    padding-right:5%;
+
+}
+
+
+}
